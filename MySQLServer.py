@@ -13,7 +13,7 @@ from mysql.connector import errorcode
 # Note: Use a dedicated user with minimal permissions in a production environment.
 config = {
     'user': 'root',
-    'password': 'Philliposeikhuemen@gmail.com', # Replace with your MySQL root password
+    'password': 'Philliposeikhuemengmail.com', # Replace with your MySQL root password
     'host': 'localhost',
 }
 
@@ -26,8 +26,7 @@ def create_database(cursor):
     try:
         # Use a parameterized query to create the database.
         # This is generally safer, although for a database name it's less critical.
-        # Execute is preferred over an f-string to prevent SQL injection vulnerabilities
-        # in more complex queries.
+        # The f-string dynamically builds the required SQL command.
         cursor.execute(f"CREATE DATABASE IF NOT EXISTS {DB_NAME}")
         print(f"Database '{DB_NAME}' created successfully!")
     except mysql.connector.Error as err:
