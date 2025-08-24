@@ -1,4 +1,3 @@
--- This script lists all tables in a MySQL database.
--- The database name is expected to be provided as an argument when running the script.
+USE alx_book_store;
 
 SHOW TABLES;
