@@ -1,5 +1,4 @@
 -- This script creates the database 'alx_book_store' and the necessary tables for an online bookstore.
--- It uses a conditional statement to avoid errors if the database already exists.
 
 -- Create the database 'alx_book_store' only if it does not already exist.
 CREATE DATABASE IF NOT EXISTS ALX_BOOK_STORE;
